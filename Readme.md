@@ -1,4 +1,4 @@
-# GET-VSSWriterStatus
+# Get-VSSWriterStatus
 
 A PowerShell script to display the status of all VSS writers of a windwos system and being able to filter on differnet properties.
 
