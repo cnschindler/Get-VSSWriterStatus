@@ -28,4 +28,4 @@ foreach ($Writer in $writers)
     $table.Rows.Add($row)
 }
 
-$table | ogv
+$table | Out-GridView
