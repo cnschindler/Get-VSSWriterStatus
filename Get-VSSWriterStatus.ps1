@@ -3,11 +3,11 @@ $writers = vssadmin list writers | Select-String -Context 0,4 -Pattern "^writer 
 
 # create a table with colums for all the writer properties
 $table = new-object system.data.datatable
-$table.Columns.Add("Name")
-$table.Columns.Add("ID")
-$table.Columns.Add("InstanceID")
-$table.Columns.Add("State")
-$table.Columns.Add("Error")
+$table.Columns.Add("Name") | Out-Null
+$table.Columns.Add("ID") | Out-Null
+$table.Columns.Add("InstanceID") | Out-Null
+$table.Columns.Add("State") | Out-Null
+$table.Columns.Add("Error") | Out-Null
 
 # Loop through all writers
 foreach ($Writer in $writers)
